@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Smoke Stream - Everything. Everywhere. All at once.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Wallet Connect -->
+    <header>
+        <div class="logo">THE SMOKE STREAM</div>
+        <button id="connect-wallet-btn">Connect Wallet</button>
+    </header>
+
+    <!-- Section 1: Hero with Video Background -->
+    <section id="hero">
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-video-of-a-dark-liquid-4648-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="THE SMOKE STREAM">THE SMOKE STREAM</h1>
+            <p>Everything. Everywhere. All at once.</p>
+            <button id="cta-watch">Enter the Stream</button>
+        </div>
+        <div class="audio-toggle">
+            <button id="audio-btn">Unmute</button>
+        </div>
+    </section>
+
+    <!-- Section 2: DJ Voltage Intro -->
+    <section id="dj-voltage-intro" class="content-section">
+        <div class="dj-avatar-container">
+            <img src="https://pixiomedia.nyc3.digitaloceanspaces.com/uploads/1749453068611-image_2fac36a1-5891-451e-88ef-353462ad6d6d_20250609_071107_156503.png?t=20250609_071107_156503" alt="DJ Voltage Avatar" id="dj-avatar">
+        </div>
+        <div class="dj-lore">
+            <h2>Meet DJ Voltage</h2>
+            <p>The resident AI persona of The Smoke Stream. A being of pure energy, born from the fusion of velvet and voltage. Connect your wallet to unlock exclusive content.</p>
+            <audio id="voice-sample" src="placeholder_voice.mp3"></audio>
+        </div>
+    </section>
+
+    <!-- Section 3: Gated Content Vault -->
+    <section id="vault" class="content-section">
+        <h2>The Vault - Exclusive Content</h2>
+        <div class="gated-content-grid">
+            <!-- Collector Access -->
+            <div class="gated-item" data-gate="collector">
+                <img src="https://pixiomedia.nyc3.digitaloceanspaces.com/uploads/1749453907982-image_2fac36a1-5891-451e-88ef-353462ad6d6d_20250609_072506_691228.png?t=20250609_072506_691228" alt="Velvet Voltage NFT">
+                <h3>DJ Voltage Live Set</h3>
+                <p class="lock-status">LOCKED</p>
+                <small>Requires: Velvet Voltage NFT</small>
+            </div>
+            <!-- Premium Access -->
+            <div class="gated-item" data-gate="premium">
+                <img src="https://i.imgur.com/5yS8b7W.png" alt="Behind the Scenes">
+                <h3>Behind-the-Scenes</h3>
+                <p class="lock-status">LOCKED</p>
+                <small>Requires: 100 $EPIC Token</small>
+            </div>
+            <!-- All-Access Pass -->
+            <div class="gated-item" data-gate="all-access">
+                <img src="https://pixiomedia.nyc3.digitaloceanspaces.com/uploads/1749453950949-image_2fac36a1-5891-451e-88ef-353462ad6d6d_20250609_072549_733811.png?t=20250609_072549_733811" alt="Genesis Pass NFT">
+                <h3>Avatar & VJ Assets</h3>
+                <p class="lock-status">LOCKED</p>
+                <small>Requires: Genesis Pass NFT</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Platform Vision -->
+    <section id="platform-vision" class="content-section">
+        <h2>A Mesh of Minds. A Forge of Futures.</h2>
+        <p>The Smoke Stream is not just media. It’s a movement. A decentralized ecosystem for creators, coders, artists, and analysts to build the future of culture, together.</p>
+    </section>
+
+    <!-- Section 5: Join the Movement -->
+    <section id="join-movement" class="content-section">
+        <h2>Join the Movement</h2>
+        <p>Connect to the core. Influence the stream. Shape the future.</p>
+        <form id="email-form">
+            <input type="email" placeholder="Enter your email to connect" required>
+            <button type="submit">Join the DAO</button>
+        </form>
+    </section>
+
+    <!-- Footer with Audio Visualizer -->
+    <footer>
+        <canvas id="audio-visualizer"></canvas>
+    </footer>
+
+    <!-- Full-screen video player modal -->
+    <div id="video-player-modal" class="hidden">
+        <div class="video-container">
+            <span id="close-modal">&times;</span>
+            <iframe id="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
