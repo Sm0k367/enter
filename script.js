@@ -11,44 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const audioVisualizer = document.getElementById('audio-visualizer');
 
     // New Web3 Elements
-    const connectWalletBtn = document.getElementById('connect-wallet-btn');
     const gatedItems = document.querySelectorAll('.gated-item');
-
-    // --- Wallet Connection Logic (Simulation) ---
-    let walletConnected = false;
-
-    connectWalletBtn.addEventListener('click', () => {
-        if (walletConnected) {
-            // Simulate disconnect
-            walletConnected = false;
-            connectWalletBtn.textContent = 'Connect Wallet';
-            connectWalletBtn.style.backgroundColor = 'var(--primary-color)';
-            lockAllItems();
-        } else {
-            // Simulate connect
-            walletConnected = true;
-            connectWalletBtn.textContent = 'Wallet Connected';
-            connectWalletBtn.style.backgroundColor = 'var(--secondary-color)';
-            unlockAllItems();
-        }
-    });
-
-    function lockAllItems() {
-        gatedItems.forEach(item => {
-            const lockStatus = item.querySelector('.lock-status');
-            lockStatus.textContent = 'LOCKED';
-            lockStatus.classList.remove('unlocked');
-        });
-    }
-
-    function unlockAllItems() {
-        gatedItems.forEach(item => {
-            const lockStatus = item.querySelector('.lock-status');
-            lockStatus.textContent = 'UNLOCKED';
-            lockStatus.classList.add('unlocked');
-        });
-    }
-
 
     // --- Existing Logic ---
 
