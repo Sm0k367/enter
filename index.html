@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Smoke Stream - Everything. Everywhere. All at once.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header with Stripe Payment -->
+  <header>
+    <div class="logo">THE SMOKE STREAM</div>
+    <a href="https://buy.stripe.com/7sI3dlgcQ4uL0gMeUW" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       id="connect-wallet-btn" 
+       class="stripe-btn">
+       🎟️ Unlock Access
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <video id="bg-video" autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-video-of-a-dark-liquid-4648-large.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1 class="glitch" data-text="THE SMOKE STREAM">THE SMOKE STREAM</h1>
+      <p>Everything. Everywhere. All at once.</p>
+      <button id="cta-watch">Enter the Stream</button>
+    </div>
+    <div class="audio-toggle">
+      <button id="audio-btn">Unmute</button>
+    </div>
+  </section>
+
+  <!-- DJ Voltage Intro -->
+  <section id="dj-voltage-intro" class="content-section">
+    <div class="dj-avatar-container">
+      <img src="https://pixiomedia.nyc3.digitaloceanspaces.com/uploads/1749453068611-image_2fac36a1-5891-451e-88ef-353462ad6d6d_20250609_071107_156503.png?t=20250609_071107_156503" alt="DJ Voltage Avatar" id="dj-avatar" />
+    </div>
+    <div class="dj-lore">
+      <h2>Meet DJ Voltage</h2>
+      <p>The resident AI persona of The Smoke Stream. A being of pure energy, born from the fusion of velvet and voltage. Connect your wallet to unlock exclusive content.</p>
+      <audio id="voice-sample" controls>
+        <source src="https://cdn.suno.ai/tracks/aGTvy2f2PWEmpHUb/output.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Gated Content Vault -->
+  <section id="vault" class="content-section">
+    <h2>The Vault - Exclusive Content</h2>
+    <div class="gated-content-grid">
+      <div class="gated-item" data-gate="collector">
+        <img src="https://pixiomedia.nyc3.digitaloceanspaces.com/uploads/1749453907982-image_2fac36a1-5891-451e-88ef-353462ad6d6d_20250609_072506_691228.png?t=20250609_072506_691228" alt="Velvet Voltage NFT" />
+        <h3>DJ Voltage Live Set</h3>
+        <p class="lock-status">LOCKED</p>
+        <small>Requires: Velvet Voltage NFT</small>
+      </div>
+      <div class="gated-item" data-gate="premium">
+        <img src="https://i.imgur.com/5yS8b7W.png" alt="Behind the Scenes" />
+        <h3>Behind-the-Scenes</h3>
+        <p class="lock-status">LOCKED</p>
+        <small>Requires: 100 $EPIC Token</small>
+      </div>
+      <div class="gated-item" data-gate="all-access">
+        <img src="https://pixiomedia.nyc3.digitaloceanspaces.com/uploads/1749453950949-image_2fac36a1-5891-451e-88ef-353462ad6d6d_20250609_072549_733811.png?t=20250609_072549_733811" alt="Genesis Pass NFT" />
+        <h3>Avatar & VJ Assets</h3>
+        <p class="lock-status">LOCKED</p>
+        <small>Requires: Genesis Pass NFT</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Vision -->
+  <section id="platform-vision" class="content-section">
+    <h2>A Mesh of Minds. A Forge of Futures.</h2>
+    <p>The Smoke Stream is not just media. It’s a movement. A decentralized ecosystem for creators, coders, artists, and analysts to build the future of culture, together.</p>
+  </section>
+
+  <!-- Join the Movement -->
+  <section id="join-movement" class="content-section">
+    <h2>Join the Movement</h2>
+    <p>Connect to the core. Influence the stream. Shape the future.</p>
+    <form id="email-form">
+      <input type="email" placeholder="Enter your email to connect" required />
+      <button type="submit">Join the DAO</button>
+    </form>
+  </section>
+
+  <!-- Footer with Audio Visualizer and Contact Info -->
+  <footer>
+    <canvas id="audio-visualizer"></canvas>
+    <div class="contact-info">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:epictechai@gmail.com">epictechai@gmail.com</a></p>
+      <p>X / Twitter: <a href="https://x.com/EpicTechAI" target="_blank">@EpicTechAI</a></p>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div id="video-player-modal" class="hidden">
+    <div class="video-container">
+      <span id="close-modal">&times;</span>
+      <iframe id="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
